@@ -1,8 +1,8 @@
-import Menu from './views/Menu.vue';
-import World from './views/World.vue';
-import Character from './views/Character.vue';
-import Characters from './views/Characters.vue';
-import NotFound from './views/NotFound.vue';
+import Menu from './components/Menu';
+import World from './components/World';
+import Character from './components/Character';
+import Characters from './components/Characters';
+import NotFound from './components/NotFound';
 
 const routes = [
     { path: '/', component: Menu },

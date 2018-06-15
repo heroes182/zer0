@@ -17,9 +17,3 @@
         }
     }
 </script>
-
-<style lang="scss">
-    h3 {
-        color: turquoise;
-    }
-</style>
