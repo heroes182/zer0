@@ -1,0 +1,20 @@
+{
+  "name": "zer0",
+  "version": "0.0.1",
+  "description": "A Zero Player Game",
+  "main": "index.html",
+  "repository": "https://github.com/heroes182/zer0.git",
+  "author": "gustavo@heroes182.com",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "vue": "^2.5.16",
+    "vue-hot-reload-api": "^2.3.0"
+  },
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.0.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "vue-template-compiler": "^2.5.16"
+  }
+}
