@@ -1,8 +1,10 @@
 <template>
     <div>
         <h3>
-            {{ title }}
+            <span v-if="$route.path != '/'" @click="$router.go(-1)">&larr;</span>
+            {{title}}
         </h3>
+        <router-view></router-view>
     </div>
 </template>
 
@@ -15,3 +17,9 @@
         }
     }
 </script>
+
+<style lang="scss">
+    h3 {
+        color: turquoise;
+    }
+</style>
