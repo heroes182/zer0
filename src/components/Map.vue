@@ -1,7 +1,6 @@
 <template>
     <div>
         {{ title }}
-        {{ character }}
     </div>
 </template>
 
@@ -9,10 +8,7 @@
     export default {
         data () {
             return {
-                title: 'Character Sheet',
-                character: {
-                    name: this.$route.params.id
-                }
+                title: 'Map'
             }
         }
     }

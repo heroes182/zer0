@@ -1,0 +1,14 @@
+{
+    "aerona": {
+        "name": "Aerona",
+        "colour": "White, Blue"
+    },
+    "benalia": {
+        "name": "Benalia",
+        "Feature": "Church of Serra"
+    },
+    "sarpadia": {
+        "name": "Sarpadia",
+        "landmark": "Fallen Empires"
+    }
+}

@@ -1,5 +1,8 @@
 # zer0
 A Zero Player Game by Gustavo Herodier
 
-Installation
+Install:
 `yarn`
+
+Run:
+`parcel`

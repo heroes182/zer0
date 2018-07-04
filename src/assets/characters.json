@@ -1,0 +1,17 @@
+{
+    "joe": {
+        "name": "Joe",
+        "class": "Knight",
+        "level": "3"
+    },
+    "Jack": {
+        "name": "Jack",
+        "class": "Mage",
+        "level": "4"
+    },
+    "Sam": {
+        "name": "Sam",
+        "class": "Paladin",
+        "level": "1"
+    }
+}

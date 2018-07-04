@@ -1,19 +1,47 @@
-import Menu from './components/Menu';
-import World from './components/World';
-import Region from './components/Region';
-import Character from './components/Character';
-import Characters from './components/Characters';
-import Coi from './components/Coi';
-import NotFound from './components/NotFound';
+import List from './components/List';
+import Detail from './components/Detail';
 
 const routes = [
-    { path: '/', component: Menu },
-    { path: '/world', component: World },
-    { path: '/region/:id', component: Region },
-    { path: '/characters', component: Characters },
-    { path: '/character/:id', component: Character },
-    { path: '/coi', component: Coi },
-    { path: '*', component: NotFound }
+    {
+        name: 'Home',
+        path: '/',
+        component: List,
+        meta: {
+            list: 'pagesList'
+        }
+    },
+    {
+        name: 'Regions',
+        path: '/regions',
+        component: List,
+        meta: {
+            list: 'regionsList',
+            child: 'Region.detail'
+        }
+    },
+    {
+        name: 'Characters',
+        path: '/characters',
+        component: List,
+        meta: {
+            list: 'charactersList',
+            child: 'Character.detail'
+        }
+    },
+    
+    // TODO: Nest these routes
+    {
+        name: 'Region.detail',
+        path: '/region/:id',
+        component: Detail,
+        props: true
+    },
+    {
+        name: 'Character.detail',
+        path: '/character/:id',
+        component: Detail,
+        props: true
+    }
 ];
 
 export default routes;

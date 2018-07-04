@@ -1,18 +1,17 @@
 <template>
     <div>
         {{ title }}
-        {{ region }}
+        <br />
+        props: {{details}}
     </div>
 </template>
 
 <script>
     export default {
+        props: ['details'],
         data () {
             return {
-                title: 'World Region',
-                region: {
-                    name: this.$route.params.id
-                }
+                'title': this.details.name+' Details'
             }
         }
     }
