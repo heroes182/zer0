@@ -1,0 +1,46 @@
+{
+    "grak": {
+        "name": "Grak",
+        "level": 1,
+        "class": "warrior",
+        "race": "goblin",
+        "inventory": {
+            "weapon": "club",
+            "armour": "",
+            "quest": ""
+        }
+    },
+    "phlogg": {
+        "name": "Phlogg",
+        "level": 1,
+        "class": "warrior",
+        "race": "goblin",
+        "inventory": {
+            "weapon": "club",
+            "armour": "",
+            "quest": ""
+        }
+    },
+    "dogger": {
+        "name": "Dogger",
+        "level": 1,
+        "class": "raider",
+        "race": "goblin",
+        "inventory": {
+            "weapon": "spear",
+            "armour": "",
+            "quest": ""
+        }
+    },
+    "sssar'q": {
+        "name": "Sssar'q",
+        "level": 1,
+        "class": "shaman",
+        "race": "lizardfolk",
+        "inventory": {
+            "weapon": "staff",
+            "armour": "",
+            "quest": ""
+        }
+    }
+}

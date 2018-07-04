@@ -1,29 +1,64 @@
 <template>
-    <div>
-        <h3>
-            <button :disabled="$route.name === 'Home'" @click="$router.go(-1)">&larr;</button>
-            {{$route.name}}
-        </h3>
-        <router-view v-bind:list="lists[$route.meta.list]"></router-view>
+    <div id="container">
+        <div id="sidebar">
+            Turn: {{turn}}
+            <ul>
+                <li>
+                    <router-link :to="{'name': 'World'}">
+                        World
+                    </router-link>
+                </li>
+                <li v-for="(item, key) in $Grimoire" v-bind:key="key">
+                    <router-link :to="{'name': 'List', 'params': { 'id': key, 'list': item }}">
+                        {{key}}
+                    </router-link>
+                    <ul>
+                        <li v-for="(item, key) in item" v-bind:key="key">
+                            <router-link :to="{'name': 'Detail', 'params': { 'id': key, 'details': item }}">
+                                {{key}}
+                            </router-link>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <router-view></router-view>
     </div>
 </template>
 
-<script>
-    import pagesList from './assets/pages.json';
-    import regionsList from './assets/regions.json';
-    import charactersList from './assets/characters.json';
-    let parcel = 'die'; // TODO: Parcel wont build without it o.0
+<style lang="scss">
+    body {
+        margin: 0;
+        font-family: sans-serif;
+    }
+    #container {
+        display: flex;
+        &>* {
+            flex-grow: 1;
+            padding: 16px;
+            min-height: calc(100vh - 32px);
+        }
+        #sidebar {
+            flex-grow: 0;
+            background-color: #dedede;
+        }
+    }
+</style>
 
+<script>
     export default {
         data () {
             return {
                 'title': 'Zer0',
-                'lists': {
-                    pagesList,
-                    regionsList,
-                    charactersList
-                }
+                'turn': 0
             }
+        },
+        created() {
+            // const self = this;
+            // setInterval(function() {
+            //     self.turn++;
+            // }, 200);
         }
     }
 </script>

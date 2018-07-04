@@ -1,9 +1,11 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import routes from './routes';
+import routes from './plugins/routes';
+import Grimoire from './plugins/grimoire';
 import App from './App.vue';
 
 Vue.use(VueRouter);
+Vue.use(Grimoire);
 
 const router = new VueRouter({
     routes,

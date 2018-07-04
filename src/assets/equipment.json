@@ -1,0 +1,22 @@
+{
+    "sword": {
+        "name": "Sword",
+        "type": "weapon",
+        "damage": "d4"
+    },
+    "spear": {
+        "name": "Spear",
+        "type": "weapon",
+        "damage": "d4"
+    },
+    "club": {
+        "name": "Club",
+        "type": "weapon",
+        "damage": "d2"
+    },
+    "shield": {
+        "name": "Shield",
+        "type": "armour",
+        "defense": 2
+    }
+}

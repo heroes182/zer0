@@ -1,12 +1,10 @@
 <template>
     <div>
+        {{ $route.params.id }} List
         <ul>
-            <li class="title">
-                {{this.$route.name}}
-            </li>
-            <li v-for="(item, index) in list" v-bind:key="index">
+            <li v-for="(item, key) in list" v-bind:key="key">
                 <router-link :to="routeLink(item)">
-                    {{item.name}}
+                    {{key}}
                 </router-link>
             </li>
         </ul>
@@ -23,18 +21,11 @@
         },
         methods: {
             routeLink: function(item) {
-                if (this.$route.meta.child) {
-                    return {
-                        'name': this.$route.meta.child,
-                        'params': {
-                            'id': item.name,
-                            'details': item
-                        }
-                    }
-                }
-                else {
-                    return {
-                        'name': item.name
+                return {
+                    'name': 'Detail',
+                    'params': {
+                        'id': item.name,
+                        'details': item
                     }
                 }
             }

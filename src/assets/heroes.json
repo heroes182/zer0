@@ -1,0 +1,24 @@
+{
+    "pelinore": {
+        "name": "Pelinore",
+        "level": 1,
+        "class": "knight",
+        "race": "human",
+        "inventory": {
+            "weapon": "sword",
+            "armour": "shortsword",
+            "quest": ""
+        }
+    },
+    "marchand": {
+        "name": "Marchand",
+        "level": 1,
+        "class": "Mage",
+        "race": "human",
+        "inventory": {
+            "weapon": "staff",
+            "armour": "",
+            "quest": ""
+        }
+    }
+}

@@ -1,8 +1,9 @@
 <template>
     <div>
-        {{ title }}
-        <br />
-        props: {{details}}
+        {{ details.name }} Details
+        <pre>
+            {{ details }}
+        </pre>
     </div>
 </template>
 
@@ -11,7 +12,7 @@
         props: ['details'],
         data () {
             return {
-                'title': this.details.name+' Details'
+                // data
             }
         }
     }

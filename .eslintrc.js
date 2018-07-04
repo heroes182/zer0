@@ -1,6 +1,4 @@
 module.exports = {
-    "extends": "airbnb-base",
-module.exports = {
   root: true,
   parserOptions: {
     sourceType: 'module',
@@ -21,6 +19,8 @@ module.exports = {
   // add your custom rules here
   rules: {
     // allow debugger during development
+    "indent": ["error", 4],
+    "comma-dangle": ["error", "never"],
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
     'import/extensions': ['error', 'always', {
       js: 'never',
@@ -34,8 +34,5 @@ module.exports = {
       }
     },
   }
-}    "rules": {
-        "indent": ["error", 4],
-        "comma-dangle": ["error", "never"]
-    }
 };
+
